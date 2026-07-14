@@ -16,7 +16,9 @@ setInterval(updateTime, 1000);
 const areaSelect = document.getElementById('area-select');
 const mapFrame = document.getElementById('map-frame');
 
-areaSelect.addEventListener('change', function() {
-    mapFrame.src = areaSelect.value;
-});
+if (areaSelect && mapFrame) {
+    areaSelect.addEventListener('change',() => {
+        mapFrame.src = areaSelect.value;
+    });
+}
 
