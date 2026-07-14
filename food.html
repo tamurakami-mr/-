@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Page</title>
+  <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <div class="container">
+        <header class="status-bar">
+            <p class="status-time" id="real-time"></p> 
+            <div class="status-icons">
+                <a href="index.html">
+                <img src="img/headerimg.PNG">
+                </a>
+            </div>
+        </header>
+
+        <div class="map-wrapper">
+
+            <div class="map-search-window">
+                <img src="icon/food.PNG">
+                <p class="map-text">好きな飲食店紹介</p>
+
+                <select class="map-select" id="area-select">
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.803679256142!2d141.51392347628166!3d43.087622571134595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2d96a87b1047%3A0x87a0d6bf6b6bc576!2z44K544O844Oq44OkIOaxn-WIpeW6lw!5e0!3m2!1sja!2sjp!4v1783306282796!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">スーリヤ</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.561735564496!2d141.48043127627986!3d43.05065187113709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2d71885aac0b%3A0x5bdda4a5fd60170e!2z6bq644KE6JmO6YmEIOWOmuWIpeW6lw!5e0!3m2!1sja!2sjp!4v1783306707128!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">麺や虎鉄</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.034789569771!2d141.53688967628256!3d43.10378377113357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b320d645a1b15%3A0x210ff20112d0475f!2z5Zue6Lui5a-_44GX44OI44Oq44OI44OzIOaxn-WIpeW6lw!5e0!3m2!1sja!2sjp!4v1783306783895!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">トリトン</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.7118066425933!2d141.48969947628083!3d43.068528471135934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2c53fad0bdc7%3A0x5195202a7678ee20!2z44K544Oq44O844Ko44OD44Kw44K5!5e0!3m2!1sja!2sjp!4v1783306870848!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">スリーエッグス</option>
+                </select>
+            </div>
+            
+            <div class="map-main">
+            <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.803679256142!2d141.51392347628166!3d43.087622571134595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2d96a87b1047%3A0x87a0d6bf6b6bc576!2z44K544O844Oq44OkIOaxn-WIpeW6lw!5e0!3m2!1sja!2sjp!4v1783306282796!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

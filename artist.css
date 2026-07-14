@@ -1,0 +1,151 @@
+html, body, div, p, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: black; 
+    overflow-y: scroll;
+    position: relative;
+}
+.status-bar {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: black;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+}
+.status-icons{
+    display:flex;
+    align-items:center;
+    height:34px;
+}
+.status-icons img{
+    height:100%;
+    width:auto;
+}
+.status-icons a{
+    display: block;
+    height: 100%;
+}
+.artist-title{
+    color:white;
+    text-align: center;
+}
+.artist-title p{
+    font-size:25px;
+}
+.artist-tier{
+    color:white;
+    margin-top:10px;
+    margin-left:10px;
+
+}
+.btn{
+    width:15%;
+    font-size:40px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.sp{
+    background-color: #ffd700;
+}
+.s{
+    background-color: #daa520;
+}
+.sm{
+    background-color: #b8860b;
+}
+.ap{
+    background-color: #ff007f;
+}
+.a{
+    background-color: #ff69b4;
+}
+.am{
+    background-color: #c78593;
+}
+.b{
+    background-color: aqua;
+}
+.c{
+    background-color: aquamarine;
+}
+.d{
+    background-color: cadetblue;
+}
+.e{
+    background-color: blueviolet;
+}
+.common{
+    position:absolute;
+}
+.his1{
+    width: 30%;
+    top:102px;
+    left:100px;
+}
+.his2{
+    width:20%;
+    top:260px;
+    left:300px;
+}
+.his3{
+    width:20%;
+    top:210px;
+    left:100px;
+}
+.his4{
+    width:20%;
+    top:270px;
+    left:200px;
+}
+.his5{
+    width:20%;
+    top:350px;
+    left:100px;
+}
+.his6{
+    width:20%;
+    top:360px;
+    left:200px;
+}
+.his7{
+    width:20%;
+    top:350px;
+    left:300px;
+}
+.his8{
+    width:20%;
+    top:440px;
+    left:100px;
+}
+.his9{
+    width:20%;
+    top:480px;
+    left:200px;
+}
+.his10{
+    width:20%;
+    top:480px;
+    left:300px;
+}

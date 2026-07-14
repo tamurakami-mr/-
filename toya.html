@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Page</title>
+  <link rel="stylesheet" href="toya.css">
+</head>
+<body>
+    <div class="container">
+        <header class="status-bar">
+            <p class="status-time" id="real-time"></p> 
+            <div class="status-icons">
+                <a href="index.html">
+                <img src="img/headerimg.PNG">
+                </a>
+            </div>
+        </header>
+
+        <div class="map-wrapper">
+
+            <div class="map-search-window">
+                <img src="icon/maptoka.PNG">
+                <p class="map-text">洞爺おすすめスポット!</p>
+                <select class="map-select" id="area-select">
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46988.64746318924!2d140.8108426394475!3d42.60218894838224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7557814b31be37%3A0x8bd2ea477ccd60de!2z5Lit5bO2!5e0!3m2!1sja!2sjp!4v1783489693474!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">中島</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11740.203648637498!2d140.81462756546924!3d42.63908062378903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7556ef8451c0fd%3A0x47e45e2a7f564e3f!2z5rWu6KaL5aCC5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1783489894687!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">浮見堂公園</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11754.015377411904!2d140.81431436541462!3d42.565827142458396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9fe2bd57e0a439%3A0xc6aade330b3ba24e!2z5rSe54i65rmW5LiH5LiW6Zaj44Ob44OG44OrIOODrOOCpOOCr-OCteOCpOODieODhuODqeOCuQ!5e0!3m2!1sja!2sjp!4v1783489975438!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">万世閣ホテル</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11754.138393406414!2d140.81455706541416!3d42.56517424262467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9fe3ce1b69cbad%3A0x15c7f72120ca5bba!2zQ29va2llc1RveWEhIUNhZmUg44Kv44OD44Kt44O844K644OI44O844Ok4oC877iO44Kr44OV44Kn!5e0!3m2!1sja!2sjp!4v1783490019480!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">CookiesToya!!Cafe</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11754.138393406414!2d140.81455706541416!3d42.56517424262467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9fe2bd959e9f65%3A0x85a9e740dd7f924e!2z44Os44K544OI44Op44Oz5pyb576K6LmE!5e0!3m2!1sja!2sjp!4v1783490066689!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">レストラン望羊蹄</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46970.588737392114!2d140.77631245043776!3d42.626128215982845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f75564faea756c1%3A0xf9ac89d4923a4497!2z44K144Kk44Ot5bGV5pyb5Y-w!5e0!3m2!1sja!2sjp!4v1783490160211!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">サイロ展望台</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11739.855984384963!2d140.84397416547066!3d42.64092322331916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7556d813d8e29f%3A0x7e93ba1fc13e56b4!2z5rSe54i65rC06L6644Gu6YeMIOiyoeeUsOOCreODo-ODs-ODl-WgtA!5e0!3m2!1sja!2sjp!4v1783490475409!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">財田キャンプ場</option>
+                </select>
+            </div>
+            
+            <div class="map-main">
+            <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187954.93939592302!2d140.69104605905392!3d42.60207308033377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7557af9b64ca35%3A0x21c193a08edbad51!2z5rSe54i65rmW!5e0!3m2!1sja!2sjp!4v1783489838797!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Page</title>
+  <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <div class="container">
+        <header class="status-bar">
+            <p class="status-time" id="real-time"></p> 
+            <div class="status-icons">
+                <a href="index.html">
+                <img src="img/headerimg.PNG">
+                </a>
+            </div>
+        </header>
+
+        <div class="map-wrapper">
+
+            <div class="map-search-window">
+                <img src="icon/maptoka.PNG">
+                <p class="map-text">進学先紹介</p>
+                <select class="map-select" id="area-select">
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11738.323011208373!2d140.82063256547673!3d42.649047121247214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7556c0e18b70bf%3A0x210a8cb06c4f1900!2z5rSe54i65rmW55S656uL44Go44GG44KE5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1783488090702!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">小学校</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.9476326671481!2d140.82637394685287!3d42.6474365089529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7556ea81ea3929%3A0xcc8eaa860d17eaec!2z5rSe54i65rmW55S656uL5rSe54i65Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1783488188000!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">中学校</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11770.644050065017!2d140.86533156534892!3d42.477497864939615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9fe0e7396d83b5%3A0x4afcd6559ac9bd2b!2z5YyX5rW36YGT5LyK6YGU6ZaL5p2l6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1783488277495!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">高校</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11657.073806766124!2d141.5268762657981!3d43.07785121148822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2d76558519bd%3A0x751306c7b176722!2z5YyX5rW36YGT5oOF5aCx5aSn5a2m!5e0!3m2!1sja!2sjp!4v1783488339042!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">大学</option>
+                </select>
+            </div>
+            
+            <div class="map-main">
+            <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4178222.9635563665!2d139.4477830820831!3d42.95568992110497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9f59209f6c888b%3A0x1c3cc3564fce038f!2z5YyX5rW36YGT!5e0!3m2!1sja!2sjp!4v1783488407865!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

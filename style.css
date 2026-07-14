@@ -1,0 +1,102 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+} 
+
+.container {
+    width:100%;
+    max-width: 400px;
+    height:100vh;
+    margin:0 auto;
+    background-color: #a0c4ff;
+}
+.status-bar {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+.status-icons{
+    display:flex;
+    align-items:center;
+    height:34px;
+}
+.status-icons img{
+    height:100%;
+    width:auto;
+}
+.cameraroll-wrapper {
+    width:100%;
+    padding:10px 20px 0 20px;
+}
+.cameraroll-img {
+    text-align: center;
+}
+.cameraroll-img img {
+    width: 100%;
+    height: 100%;
+    display:inline-block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.app-wrapper{
+    width: 100%;
+    padding:30px 20px;
+    text-align:center;
+}
+.app-img{
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+    margin:0 2%;
+    margin-bottom:15px;
+    vertical-align: top;
+}
+.app-img:hover{
+    opacity:0.8;
+}
+.app-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+.app-img p{
+    font-size: 10px;
+    color:white;
+}
+.fotter {
+    width: 100%;
+    padding:10px 20px;
+    text-align: center;
+    margin-top: -15px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+
+}
+.fotter .app-img {
+    display: inline-block;
+    width: 19%; 
+    margin: 0 2%; 
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Page</title>
+  <link rel="stylesheet" href="hokkaido.css">
+</head>
+<body>
+    <div class="container">
+        <header class="status-bar">
+            <p class="status-time" id="real-time"></p> 
+            <div class="status-icons">
+                <a href="index.html">
+                <img src="img/headerimg.PNG">
+                </a>
+            </div>
+        </header>
+
+        <div class="map-wrapper">
+
+            <div class="map-search-window">
+                <img src="icon/maptoka.PNG">
+                <p class="map-text">北海道おすすめスポット!</p>
+                <select class="map-select" id="area-select">
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47624.860239880865!2d140.6663788292772!3d41.751717025448066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef2558c0649a9%3A0x3aa277addb8f3ebe!2z5Ye96aSo5bGx!5e0!3m2!1sja!2sjp!4v1783488734776!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">函館山（夜景）</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93345.79707365703!2d141.23830589444466!3d43.019205105297274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ad5ee109f6ce9%3A0xc31bc0cdb0f93121!2z6Je75bKp5bGx!5e0!3m2!1sja!2sjp!4v1783488791407!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">藻岩山（夜景）</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11654.97349362664!2d141.26140446580646!3d43.08889030865235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b281264c7cb53%3A0xc21e3cb8d40a0191!2z55m944GE5oGL5Lq644OR44O844Kv!5e0!3m2!1sja!2sjp!4v1783488859462!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">白い恋人パーク</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11583.210645799576!2d142.47111706609056!3d43.464716911799336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0cb58c87a47e4f%3A0x67b9a05b38f1805!2z5pel44Gu5Ye65YWs5ZyS44Op44OZ44Oz44OA44O85ZyS!5e0!3m2!1sja!2sjp!4v1783489017346!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">日の出公園</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11633.408545047494!2d140.99183021589187!3d43.20210297953909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ae1b322c521cf%3A0x7f905a23e0bb9b28!2z5bCP5qi96YGL5rKz!5e0!3m2!1sja!2sjp!4v1783489072133!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">小樽運河</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11702.831102305092!2d140.66514226561705!3d42.83678627328819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0aafc02faabd3b%3A0xe1c8bf25a1fd3e08!2z6auY5qmL54mn5aC0IOODi-OCu-OCs-ODn-ODq-OCr-W3peaIvw!5e0!3m2!1sja!2sjp!4v1783489140698!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">高橋牧場</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63597.79994403695!2d142.61382240663204!3d43.05985316560207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f736135b02e38cd%3A0x9564f18b68f702a1!2z5pif6YeO44Oq44K-44O844OIIOODiOODnuODoCDjg5XjgqHjg7zjg6A!5e0!3m2!1sja!2sjp!4v1783489212254!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">トマム</option>
+                    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11746.940494242159!2d140.60576066544263!3d42.60336303289486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ffccb4d061861%3A0xc605dab7344684ee!2z5YyX5rW36YGTIOWbvemBkzIzMOWPtw!5e0!3m2!1sja!2sjp!4v1783489382947!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">国道230号線（ドライブ）</option>
+                </select>
+            </div>
+            
+            <div class="map-main">
+            <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4178222.9635563665!2d139.4477830820831!3d42.95568992110497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9f59209f6c888b%3A0x1c3cc3564fce038f!2z5YyX5rW36YGT!5e0!3m2!1sja!2sjp!4v1783488407865!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
