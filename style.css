@@ -101,7 +101,7 @@ a {
     margin: 0 2%; 
 }
 
-@media (max-height: 850px) {
+@media (max-height: 480px) {
   
   /* 1. カメラロール部分の上の余白を縮める */
   .cameraroll-wrapper {
