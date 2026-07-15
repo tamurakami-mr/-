@@ -100,3 +100,33 @@ a {
     width: 19%; 
     margin: 0 2%; 
 }
+
+@media (max-height: 850px) {
+  
+  /* 1. カメラロール部分の上の余白を縮める */
+  .cameraroll-wrapper {
+    padding: 5px 20px 0 20px; 
+  }
+  
+  /* 2. 画像が縦に伸びすぎないように高さを制限する */
+  .cameraroll-img img {
+    max-height: 140px; 
+    object-fit: cover; /* 縦横比を保ったまま綺麗に切り抜く設定 */
+  }
+  
+  /* 3. アプリ全体の上下余白を半分に縮める */
+  .app-wrapper {
+    padding: 15px 20px; 
+  }
+  
+  /* 4. アプリ同士の縦の隙間を狭くする */
+  .app-img {
+    margin-bottom: 8px; 
+  }
+  
+  /* 5. フッターの余白も縮める */
+  .fotter {
+    padding: 5px 20px;
+    margin-top: -10px;
+  }
+}
