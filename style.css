@@ -103,16 +103,14 @@ a {
 #slideshow {
   transition: opacity 0.5s ease-in-out;
 }
-@media (max-width:767px) {
+@media (max-width:767px){
     .status-bar{
-        display:none;
-        
+        display: none;
     }
     .status-icons{
-        display:none;
+        display: none;
     }
-    .app-img{
-        width:10%;
+    .container{
+        background-color:#ddd;
     }
-
 }
