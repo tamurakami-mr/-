@@ -20,6 +20,33 @@ body {
     background-color:#333; 
     overflow-y: scroll;
 }
+.status-bar {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+}
+.status-icons{
+    display:flex;
+    align-items:center;
+    height:34px;
+}
+.status-icons img{
+    height:100%;
+    width:auto;
+}
+.status-icons a{
+    display: block;
+    height: 100%;
+}
 .game-title{
     margin-top:20px;
     margin-left:40px;
