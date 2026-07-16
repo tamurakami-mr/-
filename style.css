@@ -29,25 +29,6 @@ a {
     margin:0 auto;
     background-color: #a0c4ff;
 }
-.status-bar {
-    width: 100%;
-    padding: 10px 30px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    font-size: 12px;
-    font-weight: bold;
-    color: #333;
-}
-.status-icons{
-    display:flex;
-    align-items:center;
-    height:34px;
-}
-.status-icons img{
-    height:100%;
-    width:auto;
-}
 .cameraroll-wrapper {
     width:100%;
     padding:10px 20px 0 20px;
@@ -104,12 +85,6 @@ a {
   transition: opacity 0.5s ease-in-out;
 }
 @media (max-width:767px) {
-    .status-bar{
-        display:none;
-    }
-    .status-icons{
-        display:none;
-    }
     .container{
         background-color: #ddd;
     }

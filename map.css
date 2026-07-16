@@ -19,32 +19,6 @@ body {
     /* border: 5px solid mediumblue; */
     position:relative;
 }
-.status-bar {
-    width: 100%;
-    padding: 10px 30px;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
-    position: absolute;
-    top: 0;
-    font-size: 12px;
-    font-weight: bold;
-    color: black;
-    z-index: 10;
-}
-.status-icons{
-    display:flex;
-    align-items:center;
-    height:34px;
-}
-.status-icons img{
-    height:100%;
-    width:auto;
-}
-.status-icons a{
-    display: block;
-    height:100%;
-}
 .map-wrapper{
     height:100%;
 }
