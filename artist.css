@@ -20,7 +20,33 @@ body {
     overflow-y: scroll;
     position: relative;
 }
-
+.status-bar {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: black;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+}
+.status-icons{
+    display:flex;
+    align-items:center;
+    height:34px;
+}
+.status-icons img{
+    height:100%;
+    width:auto;
+}
+.status-icons a{
+    display: block;
+    height: 100%;
+}
 .artist-title{
     color:white;
     text-align: center;
