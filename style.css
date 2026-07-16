@@ -110,5 +110,8 @@ a {
     .status-icons{
         display:none;
     }
+    .container{
+        background-color: white;
+    }
 
 }
