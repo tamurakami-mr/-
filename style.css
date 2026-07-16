@@ -104,7 +104,11 @@ a {
   transition: opacity 0.5s ease-in-out;
 }
 @media (max-width:767px) {
-    .app-wrapper{
-        padding:10px 5px;
+    .status-bar{
+        display:none;
     }
+    .status-icons{
+        display:none;
+    }
+
 }
